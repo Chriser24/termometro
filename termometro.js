@@ -7,9 +7,19 @@ let convertidorf=function () {
     let llenar = 300/100*calcular
     document.getElementById("grados").value= calcular
     document.getElementById('mercurio').style.height=llenar+'px'
+    
 
 }
 
 let boton=document.getElementById('boton')
 boton.addEventListener('click',convertidorf)
 
+let reiniciar=function(){
+    document.getElementById('number').value=``;
+    document.getElementById('grados').value=``;
+    document.getElementById('mercurio').style.height=0+'px'
+    
+}
+ let reset = document.getElementById('reset')
+
+ reset.addEventListener('click', reiniciar)
